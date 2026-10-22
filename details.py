@@ -42,23 +42,45 @@ TRAVEL = re.compile(r"교통비(?!\s*(?:미|불))|교통\s*지원|여비")
 LOC_LINE = re.compile(r"(?:본선\s*|오프라인\s*|행사\s*)?(?:장소|개최\s*지|개최\s*장소)\s*[:：]\s*([^\n]{2,70})")
 
 
+# 현장에 가야 하는 행사인지 보는 단서 (발표·심사·본선·캠프·장소 표기 등)
+IN_PERSON = re.compile(
+    r"오프라인|대면|현장\s*(?:발표|심사|참석|참여|평가|접수|방문|시상)|본선\s*(?:대회|발표|심사|장소|진출)"
+    r"|최종\s*(?:PT|발표|심사)\s*\(?(?:오프라인|현장)|\d\s*박\s*\d\s*일|숙박\s*(?:제공|지원)|캠프|대회장|집결|발대식|참석\s*필수"
+)
+ONLINE_ONLY = re.compile(
+    r"(?:전\s*과정|100\s*%|모든\s*과정|전면)\s*(?:온라인|비대면)|비대면\s*(?:으로)?\s*(?:진행|개최|심사|평가)|온라인\s*(?:으로\s*)?(?:진행|개최)"
+    r"|(?:온라인|이메일|웹|홈페이지|구글\s?폼)\s*(?:으로\s*)?(?:작품\s*)?제출"
+)
+
+
 def locate(body, title, host, event_text):
-    """장소·지역·온라인 여부·교통비 지원 여부"""
+    """장소·지역·현장 참석 필요 여부·교통비 지원 여부.
+
+    서울 기준 필터용이라 '어디서 열리나'보다 '현장에 가야 하나'가 먼저다.
+    inperson=False면 온라인 제출형(현장 참석 없음)이라 지역은 의미가 없다.
+    """
     m = LOC_LINE.search(body)
     place = re.sub(r"\s+", " ", m.group(1)).strip() if m else None
-    online = bool(re.search(r"온라인", " ".join(filter(None, [event_text, place, title]))))
+    in_lines = [l for l in body.split("\n") if IN_PERSON.search(l)]
+    strong = bool(place) or bool(in_lines)
+    if strong and not place and ONLINE_ONLY.search(body) and not re.search(r"오프라인|대면|\d\s*박\s*\d\s*일|숙박", body):
+        strong = False  # 온라인 제출/진행만 언급
+    # 이벤트 줄이 온라인이면 현장 장소가 따로 적혀 있지 않은 한 온라인 개최
+    online = bool(event_text and re.search(r"온라인", event_text)) and not place
+    inperson = strong and not online
     region = None
-    for src in (place, event_text, title + " " + host):
-        if not src:
-            continue
-        if SEOUL.search(src):
-            region = "서울"
-            break
-        hit = next((n for n, rx in REGIONS if re.search(rx, src)), None)
-        if hit:
-            region = hit
-            break
-    return {"place": place, "region": region, "online": online and not (place and region),
+    if inperson:
+        for src in (place, " ".join(in_lines), event_text, title + " " + host):
+            if not src:
+                continue
+            if SEOUL.search(src):
+                region = "서울"
+                break
+            hit = next((n for n, rx in REGIONS if re.search(rx, src)), None)
+            if hit:
+                region = hit
+                break
+    return {"place": place, "region": region, "online": online, "inperson": inperson,
             "travel": bool(TRAVEL.search(body))}
 
 
@@ -68,6 +90,23 @@ SOLO_YES = re.compile(
     r"|1\s*인\s*(?:참가|참여|신청|팀)|개인\s*자격|혼자\s*(?:참가|참여)"
 )
 TEAM_SIZE = re.compile(r"(\d)\s*[~∼\-–]\s*(\d)\s*(?:인|명)|(?:팀당|팀\s*당|팀\s*구성)[^\n\d]{0,8}(\d)\s*(?:인|명)")
+
+
+FEE_RE = re.compile(r"(?:참가|참여|신청|등록)\s*(?:비용|비|료)\s*[:：]?\s*(?:\n\s*)?([^\n]{0,40})")
+
+
+def fee_info(body):
+    """참가비: 금액이 적혀 있으면 paid=True, 무료/없음이면 False, 언급이 없으면 None"""
+    verdict, text = None, None
+    for m in FEE_RE.finditer(body):
+        s = m.group(1).strip()
+        if re.search(r"[1-9][\d,]*\s*(?:만\s*)?원|유료", s):  # 금액이 있으면 무료 문구보다 우선
+            return {"paid": True, "fee": s[:30]}
+        if re.search(r"무료|없음|없습니다|(?<![\d,])0\s?원|무상|free", s, re.I):
+            verdict, text = False, s[:20] or "무료"
+        elif re.search(r"\d[\d,]*\s*(?:만\s*)?원|유료", s):
+            return {"paid": True, "fee": s[:30]}
+    return {"paid": verdict, "fee": text}
 
 
 def participation(body):
@@ -158,6 +197,17 @@ def analyze(body, target_hint, prize_total, prize_first, today, title="", host="
         pt = m.group(1) if m else None
     out["prize"] = pt
     out["prize_won"] = to_won(pt) if pt and re.search(r"\d", pt) else None
+    if not out["prize_won"]:  # 총상금 표기가 없으면 '대상 200만원' 같은 시상 줄에서 가장 큰 금액을 사용
+        amounts = []
+        for line in body.split("\n"):
+            if re.search(r"대상|1등|1위|최우수|우승|상금|시상", line):
+                for a in re.findall(r"\d[\d,\.]*\s*(?:억|천만|백만|만)\s*원|\d{1,3}(?:,\d{3})+\s*원", line):
+                    w = to_won(a)
+                    if w and w >= 10**5:
+                        amounts.append((w, a))
+        if amounts:
+            w, a = max(amounts)
+            out["prize"], out["prize_won"] = re.sub(r"\s+", "", a), w
     out["prize_first"] = prize_first or None
     tgt = (target_hint or "").strip()
     out["target"] = tgt or None
@@ -175,6 +225,18 @@ def analyze(body, target_hint, prize_total, prize_first, today, title="", host="
         out["event_start"] = out["event_end"] = out["event_text"] = out["weekend"] = None
     out.update(locate(body, title, host, out["event_text"]))
     out["solo"], out["team_size"] = participation(body)
+    if len(body.strip()) < 150:  # 본문을 못 읽었으면 현장 참석 여부는 모름
+        out["inperson"] = None
+    # 제목엔 없어도 본문이 해커톤·바이브코딩·잼 성격이면 해커톤류로 올리기 위한 신호
+    out["hack_mentions"] = len(re.findall(
+        r"바이브\s?코딩|vibe\s?coding|해커\s?톤|hackathon|게임\s?잼|game\s?jam|\bjam\b"
+        r"|생성형\s?AI\s?툴|AI\s?(?:를|로)\s?활용(?:하여|해)\s?(?:제작|개발)|AI\s?활용\s?(?:게임|앱|서비스)", body, re.I))
+    out.update(fee_info(body))
+    # 현금 상금이 아닌 경우(구독권·이용권·크레딧 등)를 구분: 숫자 상금이 없고 이런 보상만 적혀 있으면 상금 없음으로 본다
+    out["noncash"] = bool(
+        not out["prize_won"]
+        and re.search(r"(?:1\s?위|1등|종합|대상|우승|최우수|참가자\s?전원|시상|상품|혜택)[^\n]{0,60}(?:구독|\d\s?개월|이용권|크레딧|쿠폰|Pro\b|Plus\b|라이선스)", body)
+    )
     return out
 
 

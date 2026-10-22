@@ -40,6 +40,15 @@ h1{margin:0;font-size:20px;font-weight:700;letter-spacing:-.03em}
 .hint{color:var(--sub);font-size:12px}
 .filters input:focus-visible,select:focus-visible,input[type=search]:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
+.views{display:flex;gap:20px;border-bottom:1px solid var(--line)}
+.views button{border:0;background:transparent;color:var(--sub);font:inherit;font-size:15px;padding:12px 0;cursor:pointer;
+  border-bottom:2px solid transparent;margin-bottom:-1px}
+.views button[aria-selected=true]{color:var(--text);font-weight:600;border-bottom-color:var(--text)}
+.scrap{position:absolute;right:0;top:20px;border:0;background:transparent;color:var(--sub);cursor:pointer;padding:8px;line-height:0}
+.scrap svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round}
+.scrap[aria-pressed=true]{color:var(--accent)}
+.scrap[aria-pressed=true] svg{fill:currentColor}
+.title{padding-right:34px}
 .tools{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;flex-wrap:wrap}
 .count{font-size:13px;color:var(--sub)}
 .count b{color:var(--text);font-weight:600}
@@ -114,8 +123,13 @@ footer{margin-top:28px;padding-top:16px;border-top:2px solid var(--text);font-si
 
   <div class="filters" role="group" aria-label="필터">
     <label><input type="checkbox" data-f="univOnly">대학생 전용</label>
-    <label><input type="checkbox" data-f="seoul">서울 기준 <span class="hint">온라인 · 교통비 지원 포함</span></label>
+    <label><input type="checkbox" data-f="seoul">서울 기준 <span class="hint">현장 참석 없는 온라인 제출 · 교통비 지원 포함</span></label>
     <label><input type="checkbox" data-f="weekend">주말 포함</label>
+  </div>
+
+  <div class="views" role="tablist" aria-label="보기">
+    <button role="tab" data-v="all" aria-selected="true">전체</button>
+    <button role="tab" data-v="scrap" aria-selected="false">스크랩 <span id="scrapN"></span></button>
   </div>
 
   <div class="tools">
@@ -123,8 +137,8 @@ footer{margin-top:28px;padding-top:16px;border-top:2px solid var(--text);font-si
     <div class="right">
       <input id="q" type="search" placeholder="검색" aria-label="검색">
       <select id="sort" aria-label="정렬">
-        <option value="fit">맞춤순</option>
         <option value="deadline">마감 임박순</option>
+        <option value="fit">맞춤순</option>
         <option value="event">행사 빠른순</option>
         <option value="prize">상금 높은순</option>
         <option value="new">새로 올라온 순</option>
@@ -134,7 +148,7 @@ footer{margin-top:28px;padding-top:16px;border-top:2px solid var(--text);font-si
 
   <div id="err" class="err" hidden></div>
   <div id="list"></div>
-  <footer>위비티 · 링커리어에서 6시간마다 수집합니다. 상금 없는 행사와 접수 마감된 행사는 제외합니다. 일정과 상금은 본문에서 자동으로 읽은 값이라 신청 전 원문을 확인하세요.</footer>
+  <footer>위비티 · 링커리어에서 6시간마다 수집합니다. 접수 마감된 행사, 상금 없는 행사(구독권 등 비현금 포함), 참가비 있는 행사는 제외합니다. 스크랩은 이 기기 브라우저에만 저장됩니다. 일정과 상금은 본문에서 자동으로 읽은 값이라 신청 전 원문을 확인하세요.</footer>
 </main>
 <script>
 const $=id=>document.getElementById(id);
@@ -146,9 +160,18 @@ const WD=['일','월','화','수','목','금','토'];
 const T=i=>i.target||'';
 const univOnly=i=>/대학|재학/.test(T(i))&&!/일반|직장|제한|전체|누구/.test(T(i));
 const eligible=i=>i.univ||!T(i)||/제한|전체|누구|일반|청년/.test(T(i));   // 대학생이 신청 가능한가
-const reachable=i=>i.online||i.region==='서울'||i.travel||!i.region;        // 서울에서 갈 수 있나
-const hasPrize=i=>!(i.prize_won===0||/없음|무상금/.test(i.prize||''));
-let items=[],moreOpen=null;
+// 서울 기준: 현장에 안 가도 되면(온라인 제출·온라인 개최) 지역과 무관. 가야 한다면 서울이거나 교통비 지원이 있어야 함
+const reachable=i=>i.inperson===false||i.online||i.region==='서울'||i.travel||!i.region;
+// 상금: 현금 상금이 확인된 것만 기본 목록. 상금 없음·구독권 같은 비현금 보상은 완전 제외, 상금 미확인은 확장 쪽
+const noPrize=i=>i.prize_won===0||i.noncash||/없음|무상금/.test(i.prize||'');
+const cashPrize=i=>i.prize_won>0;
+const paid=i=>i.paid===true;   // 참가비 있는 행사는 완전 제외
+let items=[],moreOpen=null,view='all';
+// 스크랩: 이 기기 브라우저에만 저장됨
+const scraps=new Set(safe(()=>JSON.parse(localStorage.getItem('scraps')||'[]'),[]));
+const ids=i=>i.merged_ids||[i.id];
+const isScrap=i=>ids(i).some(m=>scraps.has(m));
+const saveScraps=()=>safe(()=>localStorage.setItem('scraps',JSON.stringify([...scraps])));
 const day=d=>new Date(d+'T00:00:00+09:00');
 const dleft=d=>d?Math.round((day(d)-new Date().setHours(0,0,0,0))/864e5):null;
 const opened=i=>!i.apply_start||day(i.apply_start)<=new Date();
@@ -160,6 +183,7 @@ const score=i=>(univOnly(i)?4:0)+(reachable(i)?2:0)+(i.weekend?3:0)+(i.prize_won
 
 function placeHtml(i){
   if(i.online)return '온라인';
+  if(i.inperson===false)return '온라인 제출 '+na('현장 참석 없음');
   if(!i.region)return na('확인 필요');
   const t=i.travel?' <span class="wk">교통비 지원</span>':'';
   const place=i.place&&i.region!=='서울'?` <span class="na">${esc(i.place.split(/[(,]/)[0].trim())}</span>`:'';
@@ -177,7 +201,10 @@ function card(i,reason){
   const apply=`${i.apply_start?md(i.apply_start)+' – ':'~ '}${i.deadline?md(i.deadline):'?'} 접수`;
   const flags=[i.isNew&&'NEW',fit&&'맞춤'].filter(Boolean).map(t=>`<span class="hl">${t}</span>`);
   if(reason)flags.push(`<span class="why">${reason}</span>`);
+  const sc=isScrap(i);
   return `<article class="row ${fit?'fit':''}">
+    <button class="scrap" data-id="${esc(i.id)}" aria-pressed="${sc}" aria-label="${sc?'스크랩 해제':'스크랩'}">
+      <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg></button>
     <div class="dd ${soon?'soon':''}">${i.left===null?'':i.left===0?'오늘':'D-'+i.left}<small>접수 중</small></div>
     <div>
       <div class="title"><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a></div>
@@ -190,6 +217,7 @@ function card(i,reason){
         <div class="wide"><dt>행사 일정</dt><dd>${i.event_start
           ?`<span class="${i.weekend?'wk':''}">${range(i.event_start,i.event_end)}</span>${i.weekend?' 주말 포함':''}`
           :na('본문에서 못 찾음')}</dd></div>
+        <div><dt>참가비</dt><dd>${i.paid===false?'무료':na('확인 필요')}</dd></div>
       </dl>
       ${topic?`<div class="topic">${topic}</div>`:''}
     </div>
@@ -199,31 +227,49 @@ function card(i,reason){
 function render(){
   const q=$('q').value.trim().toLowerCase(), sort=$('sort').value;
   items.forEach(i=>{i.left=dleft(i.deadline);i.isNew=!!lastVisit&&i.first_seen>lastVisit});
-  // 접수 중(마감 안 지남·접수 시작함) + 상금 있음은 항상 적용
-  const base=items.filter(i=>(i.left===null||i.left>=0)&&opened(i)&&hasPrize(i)
-    &&(i.title+i.host+(i.topic||'')+(i.tags||[]).join(' ')).toLowerCase().includes(q)
-    &&(!prefs.weekend||i.weekend));
   const by={
     fit:(a,b)=>score(b)-score(a)||(a.left??999)-(b.left??999),
     deadline:(a,b)=>(a.left??999)-(b.left??999),
     event:(a,b)=>(a.event_start||'9').localeCompare(b.event_start||'9'),
     prize:(a,b)=>(b.prize_won||0)-(a.prize_won||0),
     new:(a,b)=>b.first_seen.localeCompare(a.first_seen)}[sort];
-  // 해커톤류(~톤·잼·바이브코딩 포함)만 기본 목록. 개발 경진대회(kind=loose)는 확장 쪽으로
-  const main=base.filter(i=>i.kind!=='loose'&&(!prefs.univOnly||univOnly(i))&&(!prefs.seoul||reachable(i))).sort(by);
-  // 확장: 조건을 완화하면 나오는 것 (전 연령 가능 / 지방 개최 / 개발 경진대회). 대학생이 신청 가능한 것만
+  // 접수 중(마감 안 지남·접수 시작함)인 것만. 상금 없음·참가비 있음은 항상 제외
+  const live=items.filter(i=>(i.left===null||i.left>=0)&&opened(i)&&!noPrize(i)&&!paid(i));
+  const nScrap=live.filter(isScrap).length;
+  $('scrapN').textContent=nScrap?`(${nScrap})`:'';
+  document.querySelectorAll('.views button').forEach(b=>b.setAttribute('aria-selected',b.dataset.v===view));
+  const searched=live.filter(i=>(i.title+i.host+(i.topic||'')+(i.tags||[]).join(' ')).toLowerCase().includes(q));
+  if(view==='scrap'){   // 스크랩 보기: 필터와 상관없이 저장한 것만
+    const rows=searched.filter(isScrap).sort(by);
+    $('count').innerHTML=`스크랩 <b>${rows.length}</b>건`;
+    $('list').innerHTML=rows.map(i=>card(i)).join('')||'<div class="empty">스크랩한 해커톤이 없어요. 카드 오른쪽 위 책갈피를 눌러 저장하세요.</div>';
+    return;
+  }
+  const base=searched.filter(i=>!prefs.weekend||i.weekend);
+  // 해커톤류(~톤·잼·바이브코딩 포함)이고 현금 상금이 확인된 것만 기본 목록. 개발 경진대회(kind=loose)와 상금 미확인은 확장 쪽으로
+  const main=base.filter(i=>i.kind!=='loose'&&cashPrize(i)&&(!prefs.univOnly||univOnly(i))&&(!prefs.seoul||reachable(i))).sort(by);
+  // 확장: 조건을 완화하면 나오는 것 (전 연령 가능 / 지방 개최 / 개발 경진대회 / 상금 확인 필요). 대학생이 신청 가능한 것만
   const widened=base.filter(i=>!main.includes(i)&&eligible(i)).sort(by);
   const open=moreOpen===null?main.length<3:moreOpen;
   let html=main.map(i=>card(i)).join('')||'<div class="empty">기본 조건에 맞는 해커톤이 없어요.</div>';
   if(widened.length){
     html+=`<button class="more" id="more" aria-expanded="${open}">조건을 넓혀서 보기 · ${widened.length}건
       <span>${open?'접기':'펼치기'}</span></button>`;
-    if(open)html+=widened.map(i=>card(i,[i.kind==='loose'&&'개발 경진대회',prefs.univOnly&&!univOnly(i)&&'전 연령 가능',prefs.seoul&&!reachable(i)&&'지방 개최'].filter(Boolean).join(' · '))).join('');
+    if(open)html+=widened.map(i=>card(i,[i.kind==='loose'&&'개발 경진대회',!cashPrize(i)&&'상금 확인 필요',prefs.univOnly&&!univOnly(i)&&'전 연령 가능',prefs.seoul&&!reachable(i)&&'지방 개최'].filter(Boolean).join(' · '))).join('');
   }
   $('count').innerHTML=`기본 조건 <b>${main.length}</b>건`+(widened.length?` · 넓히면 +${widened.length}`:'');
   $('list').innerHTML=html;
   const m=$('more');if(m)m.onclick=()=>{moreOpen=!open;render()};
 }
+
+// 스크랩 토글 / 보기 전환
+$('list').addEventListener('click',e=>{
+  const b=e.target.closest('.scrap');if(!b)return;
+  const it=items.find(i=>i.id===b.dataset.id);if(!it)return;
+  if(isScrap(it))ids(it).forEach(m=>scraps.delete(m));else scraps.add(it.id);
+  saveScraps();render();
+});
+document.querySelectorAll('.views button').forEach(b=>b.onclick=()=>{view=b.dataset.v;render()});
 
 document.querySelectorAll('.filters input').forEach(c=>{
   c.checked=!!prefs[c.dataset.f];

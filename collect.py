@@ -12,19 +12,33 @@ from details import linkareer_detail, wevity_detail
 
 KST = timezone(timedelta(hours=9))
 DATA = Path(__file__).parent / "data" / "hackathons.json"
-SEARCH_TERMS = ["해커톤", "hackathon", "톤", "잼", "jam", "바이브코딩", "코딩", "앱 개발", "SW 경진"]
+SEARCH_TERMS = ["해커톤", "hackathon", "톤", "잼", "jam", "바이브코딩", "코딩", "앱 개발", "SW 경진", "게임 개발", "AI 개발"]
+# 이 단어로 검색해서 나온 건 제목이 평범해도 후보로 올리고, 본문을 읽어 해커톤류인지 확인한다
+BODY_TERMS = {"해커톤", "hackathon", "잼", "jam", "바이브코딩", "코딩"}
 SEARCH_PAGES = 2
 CATEGORY_PAGES = 3
 
 CORE = re.compile(
     r"해커\s?톤|hackathon|[A-Za-z]{2,}thon\b|[가-힣A-Za-z0-9]{2,}톤(?![가-힣A-Za-z])"
-    r"|잼(?![가-힣A-Za-z])|\bjam\b|game\s?jam|바이브\s?코딩|vibe\s?coding",
+    r"|잼(?![가-힣A-Za-z])|\bjam\b|game\s?jam|바이브\s?코딩|vibe\s?coding"
+    r"|(?:AI|인공지능)\s?.{0,4}게임\s?(?:개발|제작|·|콘텐츠)|게임\s?(?:개발|제작)\s?.{0,4}(?:AI|인공지능)",
     re.I,
 )
 LOOSE = re.compile(
-    r"(코딩|개발|SW|소프트웨어|앱|프로그래밍)\s?(경진|챌린지|대회|공모|콘테스트|챔피언십)|코딩\s?테스트|프로그래밍",
+    r"(코딩|개발|SW|소프트웨어|앱|프로그래밍)\s?(경진|챌린지|대회|공모|콘테스트|챔피언십)|코딩\s?테스트|프로그래밍"
+    r"|게임.{0,10}(개발|제작|콘텐츠).{0,10}(공모|대회|경진|챌린지)|AI.{0,8}(게임|콘텐츠|서비스|앱).{0,10}(공모|대회|경진)",
     re.I,
 )
+
+
+def final_kind(kind, extra):
+    """제목으로 정한 kind를 본문 신호로 보정: 본문이 해커톤·바이브코딩·잼 성격이면 core로 올린다. None이면 탈락."""
+    n = extra.get("hack_mentions") or 0
+    if kind is None:
+        return "core" if n >= 2 else None
+    if kind == "loose" and n >= 1:
+        return "core"
+    return kind
 # '톤'으로 끝나지만 해커톤이 아닌 것
 NOT_HACK = re.compile(r"마라톤|트라이애슬론|철인|워싱톤|뉴톤|런닝톤|걷기|달리기|marathon", re.I)
 
@@ -61,23 +75,26 @@ def wevity_list(url, today):
 
 
 def wevity(today):
-    urls = [
-        f"https://www.wevity.com/?c=find&s=1&sp=contents&sw={urllib.parse.quote(t)}&gp={p}"
+    urls = [  # (주소, 제목이 평범해도 후보로 올릴지)
+        (f"https://www.wevity.com/?c=find&s=1&sp=contents&sw={urllib.parse.quote(t)}&gp={p}", t in BODY_TERMS)
         for t in SEARCH_TERMS for p in range(1, SEARCH_PAGES + 1)
     ] + [
-        f"https://www.wevity.com/?c=find&s=1&gub=1&cidx={c}&gp={p}"
+        (f"https://www.wevity.com/?c=find&s=1&gub=1&cidx={c}&gp={p}", False)
         for c in (20, 21, 22) for p in range(1, CATEGORY_PAGES + 1)  # 웹/IT · 게임/SW · 과학/공학
     ]
-    cand = {}
-    for u in urls:
+    cand, fails = {}, 0
+    for u, body_ok in urls:
         try:
             for ix, title, host, deadline in wevity_list(u, today):
                 kind = kind_of(title)
-                if kind:
+                if (kind or body_ok) and not (ix in cand and cand[ix][3] and not kind):
                     cand[ix] = (title, host, deadline, kind)
         except Exception as e:
+            fails += 1
             print("list fail", u, e, file=sys.stderr)
         time.sleep(0.5)
+    if fails > len(urls) / 2:  # 네트워크 끊김·차단: 빈 결과로 기존 데이터를 덮어쓰지 않도록 이 소스는 실패 처리
+        raise RuntimeError(f"목록 {fails}/{len(urls)}건 실패")
     out = []
     for ix, (title, host, deadline, kind) in cand.items():
         url = f"https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix={ix}"
@@ -87,6 +104,9 @@ def wevity(today):
             time.sleep(0.5)
         except Exception as e:
             print("detail fail", url, e, file=sys.stderr)
+        kind = final_kind(kind, extra)
+        if not kind:
+            continue
         out.append({**extra, "id": f"wevity-{ix}", "source": "위비티", "kind": kind, "title": title,
                     "host": host, "deadline": deadline, "url": url})
     return out
@@ -100,19 +120,24 @@ def linkareer_state(url):
 
 def linkareer(today):
     base = "https://linkareer.com/list/contest?filterType=CATEGORY&orderBy_direction=DESC&orderBy_field=CREATED_AT"
-    urls = [f"{base}&filterBy_q={urllib.parse.quote(t)}&page={p}"
+    urls = [(f"{base}&filterBy_q={urllib.parse.quote(t)}&page={p}", t in BODY_TERMS)
             for t in SEARCH_TERMS for p in range(1, SEARCH_PAGES + 1)] + [
-        f"{base}&filterBy_categoryIDs=35&page={p}" for p in range(1, CATEGORY_PAGES + 1)]
-    cand = {}
-    for u in urls:
+        (f"{base}&filterBy_categoryIDs=35&page={p}", False) for p in range(1, CATEGORY_PAGES + 1)]
+    cand, fails = {}, 0
+    for u, body_ok in urls:
         try:
             for k, v in linkareer_state(u).items():
-                kind = kind_of(v.get("title", "")) if k.startswith("Activity:") else None
-                if kind:
+                if not k.startswith("Activity:"):
+                    continue
+                kind = kind_of(v.get("title", ""))
+                if (kind or body_ok) and not (v["id"] in cand and cand[v["id"]][1] and not kind):
                     cand[v["id"]] = (v, kind)
         except Exception as e:
+            fails += 1
             print("list fail", u, e, file=sys.stderr)
         time.sleep(0.5)
+    if fails > len(urls) / 2:
+        raise RuntimeError(f"목록 {fails}/{len(urls)}건 실패")
     out = []
     for aid, (v, kind) in cand.items():
         close = v.get("recruitCloseAt")
@@ -128,6 +153,9 @@ def linkareer(today):
             time.sleep(0.5)
         except Exception as e:
             print("detail fail", aid, e, file=sys.stderr)
+        kind = final_kind(kind, extra)
+        if not kind:
+            continue
         out.append({
             **extra, "id": f"linkareer-{aid}", "source": "링커리어", "kind": kind, "title": v["title"],
             "host": v.get("organizationName") or "",
