@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T11:44:54+09:00",
+ "updated": "2026-10-22T11:59:27+09:00",
  "errors": [],
  "items": [
   {
@@ -25,14 +25,15 @@
    "team_size": "2~4인",
    "apply_start": "2026-10-12",
    "id": "wevity-111843",
-   "source": "위비티",
+   "source": "위비티 · 링커리어",
    "kind": "core",
    "title": "2026 한림 G-Lab@동해 AI활용 지역문제해결 해커톤",
    "host": "한림대학교, 동해시",
-   "deadline": "2026-10-27",
+   "deadline": "2026-10-26",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111843",
    "merged_ids": [
-    "wevity-111843"
+    "wevity-111843",
+    "linkareer-358858"
    ],
    "first_seen": "2026-10-22T11:44:54+09:00"
   },
@@ -63,7 +64,7 @@
    "kind": "core",
    "title": "2026 스페이스 해커톤",
    "host": "우주항공청",
-   "deadline": "2026-11-06",
+   "deadline": "2026-11-05",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111009",
    "merged_ids": [
     "wevity-111009",
@@ -202,7 +203,7 @@
    "kind": "loose",
    "title": "현대자동차그룹 차량용 앱 개발 공모전",
    "host": "현대자동차그룹",
-   "deadline": "2026-11-16",
+   "deadline": "2026-11-15",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111802",
    "merged_ids": [
     "wevity-111802",
@@ -341,7 +342,7 @@
    "kind": "loose",
    "title": "공공 웹사이트 불법광고 탐지 도구 개발 공모전",
    "host": "행정안전부",
-   "deadline": "2026-10-24",
+   "deadline": "2026-10-23",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=110998",
    "merged_ids": [
     "wevity-110998"
@@ -443,7 +444,7 @@
    "kind": "core",
    "title": "2026 동해시 AI 활용 해커톤 대회",
    "host": "동해시 & 한림대 G-Lab",
-   "deadline": "2026-10-23",
+   "deadline": "2026-10-22",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111734",
    "merged_ids": [
     "wevity-111734",
@@ -477,7 +478,7 @@
    "kind": "loose",
    "title": "2026 CWNU SW-DNA² 챌린지 대학생 AI·SW 경진대회",
    "host": "국립창원대학교",
-   "deadline": "2026-10-24",
+   "deadline": "2026-10-23",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111346",
    "merged_ids": [
     "wevity-111346",
@@ -657,7 +658,7 @@
    "kind": "loose",
    "title": "2026 충북글로벌게임센터 AI 게임 개발 공모전",
    "host": "청주시문화산업진흥재단",
-   "deadline": "2026-10-31",
+   "deadline": "2026-10-30",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111767",
    "merged_ids": [
     "wevity-111767"
@@ -723,7 +724,7 @@
    "kind": "core",
    "title": "나랏돈 50조 찾기 프로젝트 - 나라장터 해커톤",
    "host": "개혁신당",
-   "deadline": "2026-10-26",
+   "deadline": "2026-10-25",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111588",
    "merged_ids": [
     "wevity-111588",
