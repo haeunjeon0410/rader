@@ -1,7 +1,86 @@
 {
- "updated": "2026-10-23T11:18:28+09:00",
+ "updated": "2026-10-23T19:37:44+09:00",
  "errors": [],
  "items": [
+  {
+   "prize": "500만원",
+   "prize_won": 5000000,
+   "prize_first": null,
+   "target": "대상 제한 없음",
+   "univ": false,
+   "topic": null,
+   "tags": [
+    "AI",
+    "교육"
+   ],
+   "event_start": "2026-11-05",
+   "event_end": "2026-11-06",
+   "event_text": "일시: 2026년 11월 5일(목) ~ 11월 6일(금)",
+   "weekend": false,
+   "place": "청도 신화랑 풍류마을",
+   "region": null,
+   "online": false,
+   "inperson": true,
+   "travel": false,
+   "solo": true,
+   "team_size": "1~4인",
+   "hack_mentions": 8,
+   "paid": false,
+   "fee": "무료",
+   "noncash": false,
+   "apply_start": "2026-10-23",
+   "id": "linkareer-359305",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "2026 청도 바이브코딩 해커톤 with 해커그라운드",
+   "host": "해커그라운드",
+   "deadline": "2026-11-03",
+   "url": "https://linkareer.com/activity/359305",
+   "merged_ids": [
+    "linkareer-359305"
+   ],
+   "first_seen": "2026-10-23T19:37:44+09:00"
+  },
+  {
+   "prize": "100만원",
+   "prize_won": 1000000,
+   "prize_first": null,
+   "target": "대학생, 직장인/일반인",
+   "univ": true,
+   "topic": null,
+   "tags": [
+    "AI",
+    "교육",
+    "창업"
+   ],
+   "event_start": "2026-11-02",
+   "event_end": "2026-11-02",
+   "event_text": "참가확정자 발표: 2026. 11. 02(월) 예정",
+   "weekend": false,
+   "place": "건국대학교 공학관 별관 X-Space (IR 대회) / 그 외 온라인",
+   "region": null,
+   "online": false,
+   "inperson": true,
+   "travel": false,
+   "solo": true,
+   "team_size": null,
+   "hack_mentions": 4,
+   "paid": false,
+   "fee": "무료",
+   "noncash": false,
+   "apply_start": "2026-10-23",
+   "id": "linkareer-359170",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "[선착순 30명] “AI로 아이디어를 글로벌 비즈니스로!” KU 캠퍼스타운 AI 글로벌 해커톤",
+   "host": "(주)메인콘텐츠",
+   "deadline": "2026-10-30",
+   "url": "https://linkareer.com/activity/359170",
+   "merged_ids": [
+    "linkareer-359170"
+   ],
+   "first_seen": "2026-10-23T19:37:44+09:00"
+  },
   {
    "prize": "400,000원",
    "prize_won": 400000,
@@ -77,7 +156,7 @@
    "kind": "core",
    "title": "Render × XYZ × Tin Computer 글로벌 테크 후원 해커톤",
    "host": "Extriver",
-   "deadline": "2026-11-16",
+   "deadline": "2026-11-15",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111849",
    "merged_ids": [
     "wevity-111849"
@@ -115,7 +194,7 @@
    "kind": "loose",
    "title": "쿵야 IP를 활용한 로블록스(Roblox) 게임 콘텐츠 제작 공모전",
    "host": "넷마블 MNB",
-   "deadline": "2026-11-02",
+   "deadline": "2026-11-01",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=110895",
    "merged_ids": [
     "wevity-110895"
@@ -155,7 +234,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2027-01-01",
+   "deadline": "2026-12-31",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
@@ -194,7 +273,7 @@
    "kind": "core",
    "title": "2026년 장애인 분야 해커톤 대회 (장애 플러스 기술) 시민평가단 모집",
    "host": "한국장애인재단",
-   "deadline": "2026-10-29",
+   "deadline": "2026-10-28",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111854",
    "merged_ids": [
     "wevity-111854"
@@ -233,7 +312,7 @@
    "kind": "core",
    "title": "2026 조달청 AI 게임·콘텐츠 공모전",
    "host": "조달청",
-   "deadline": "2026-11-23",
+   "deadline": "2026-11-22",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111628",
    "merged_ids": [
     "wevity-111628"
@@ -272,7 +351,7 @@
    "kind": "core",
    "title": "2026 한림 G-Lab@동해 AI활용 지역문제해결 해커톤",
    "host": "한림대학교, 동해시",
-   "deadline": "2026-10-27",
+   "deadline": "2026-10-26",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111843",
    "merged_ids": [
     "wevity-111843",
@@ -351,7 +430,7 @@
    "kind": "core",
    "title": "2026 스페이스 해커톤",
    "host": "우주항공청",
-   "deadline": "2026-11-06",
+   "deadline": "2026-11-05",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111009",
    "merged_ids": [
     "wevity-111009",
@@ -549,7 +628,7 @@
    "kind": "core",
    "title": "2026 전국 대학생 SW 창업아이디어톤",
    "host": "한양대 ERICA SW중심대학사업단",
-   "deadline": "2026-11-02",
+   "deadline": "2026-11-01",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111324",
    "merged_ids": [
     "wevity-111324",
@@ -590,7 +669,7 @@
    "kind": "loose",
    "title": "현대자동차그룹 차량용 앱 개발 공모전",
    "host": "현대자동차그룹",
-   "deadline": "2026-11-16",
+   "deadline": "2026-11-15",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111802",
    "merged_ids": [
     "wevity-111802",
@@ -667,7 +746,7 @@
    "kind": "core",
    "title": "2026 CWNU SW-DNA² 챌린지 대학생 AI·SW 경진대회",
    "host": "국립창원대학교",
-   "deadline": "2026-10-24",
+   "deadline": "2026-10-23",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111346",
    "merged_ids": [
     "wevity-111346",
@@ -786,7 +865,7 @@
    "kind": "loose",
    "title": "공공 웹사이트 불법광고 탐지 도구 개발 공모전",
    "host": "행정안전부",
-   "deadline": "2026-10-24",
+   "deadline": "2026-10-23",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=110998",
    "merged_ids": [
     "wevity-110998"
@@ -907,7 +986,7 @@
    "kind": "core",
    "title": "2026 충북글로벌게임센터 AI 게임 개발 공모전",
    "host": "청주시문화산업진흥재단",
-   "deadline": "2026-10-31",
+   "deadline": "2026-10-30",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111767",
    "merged_ids": [
     "wevity-111767",
@@ -949,7 +1028,7 @@
    "kind": "core",
    "title": "2026 글로컬 부산관광 트래블톤 공모전",
    "host": "부산관광공사",
-   "deadline": "2026-10-31",
+   "deadline": "2026-10-30",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111518",
    "merged_ids": [
     "wevity-111518",
@@ -1028,7 +1107,7 @@
    "kind": "core",
    "title": "나랏돈 50조 찾기 프로젝트 - 나라장터 해커톤",
    "host": "개혁신당",
-   "deadline": "2026-10-26",
+   "deadline": "2026-10-25",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111588",
    "merged_ids": [
     "wevity-111588",
