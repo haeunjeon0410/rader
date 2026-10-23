@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T19:37:44+09:00",
+ "updated": "2026-10-24T01:01:38+09:00",
  "errors": [],
  "items": [
   {
@@ -156,7 +156,7 @@
    "kind": "core",
    "title": "Render × XYZ × Tin Computer 글로벌 테크 후원 해커톤",
    "host": "Extriver",
-   "deadline": "2026-11-15",
+   "deadline": "2026-11-16",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111849",
    "merged_ids": [
     "wevity-111849"
@@ -194,7 +194,7 @@
    "kind": "loose",
    "title": "쿵야 IP를 활용한 로블록스(Roblox) 게임 콘텐츠 제작 공모전",
    "host": "넷마블 MNB",
-   "deadline": "2026-11-01",
+   "deadline": "2026-11-02",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=110895",
    "merged_ids": [
     "wevity-110895"
@@ -234,7 +234,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2026-12-31",
+   "deadline": "2027-01-01",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
@@ -273,7 +273,7 @@
    "kind": "core",
    "title": "2026년 장애인 분야 해커톤 대회 (장애 플러스 기술) 시민평가단 모집",
    "host": "한국장애인재단",
-   "deadline": "2026-10-28",
+   "deadline": "2026-10-29",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111854",
    "merged_ids": [
     "wevity-111854"
@@ -312,7 +312,7 @@
    "kind": "core",
    "title": "2026 조달청 AI 게임·콘텐츠 공모전",
    "host": "조달청",
-   "deadline": "2026-11-22",
+   "deadline": "2026-11-23",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111628",
    "merged_ids": [
     "wevity-111628"
@@ -351,7 +351,7 @@
    "kind": "core",
    "title": "2026 한림 G-Lab@동해 AI활용 지역문제해결 해커톤",
    "host": "한림대학교, 동해시",
-   "deadline": "2026-10-26",
+   "deadline": "2026-10-27",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111843",
    "merged_ids": [
     "wevity-111843",
@@ -430,7 +430,7 @@
    "kind": "core",
    "title": "2026 스페이스 해커톤",
    "host": "우주항공청",
-   "deadline": "2026-11-05",
+   "deadline": "2026-11-06",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111009",
    "merged_ids": [
     "wevity-111009",
@@ -628,7 +628,7 @@
    "kind": "core",
    "title": "2026 전국 대학생 SW 창업아이디어톤",
    "host": "한양대 ERICA SW중심대학사업단",
-   "deadline": "2026-11-01",
+   "deadline": "2026-11-02",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111324",
    "merged_ids": [
     "wevity-111324",
@@ -669,7 +669,7 @@
    "kind": "loose",
    "title": "현대자동차그룹 차량용 앱 개발 공모전",
    "host": "현대자동차그룹",
-   "deadline": "2026-11-15",
+   "deadline": "2026-11-16",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111802",
    "merged_ids": [
     "wevity-111802",
@@ -712,45 +712,6 @@
    "url": "https://linkareer.com/activity/358224",
    "merged_ids": [
     "linkareer-358224"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
-  },
-  {
-   "prize": "다양한 혜택",
-   "prize_won": null,
-   "prize_first": "홈페이지 https://www.wevity.com/?c=find&s=1&gbn=view&gp=1&ix=111346",
-   "target": "대학생, 기타",
-   "univ": true,
-   "topic": "전공 융합 아이디어로 문제 해결",
-   "tags": [
-    "AI"
-   ],
-   "event_start": null,
-   "event_end": null,
-   "event_text": null,
-   "weekend": null,
-   "place": null,
-   "region": "경남",
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": true,
-   "team_size": null,
-   "hack_mentions": 1,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-09-29",
-   "id": "wevity-111346",
-   "source": "위비티 · 링커리어",
-   "kind": "core",
-   "title": "2026 CWNU SW-DNA² 챌린지 대학생 AI·SW 경진대회",
-   "host": "국립창원대학교",
-   "deadline": "2026-10-23",
-   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111346",
-   "merged_ids": [
-    "wevity-111346",
-    "linkareer-353664"
    ],
    "first_seen": "2026-10-22T11:44:54+09:00"
   },
@@ -830,45 +791,6 @@
    "url": "https://linkareer.com/activity/352987",
    "merged_ids": [
     "linkareer-352987"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
-  },
-  {
-   "prize": "470만 원",
-   "prize_won": 4700000,
-   "prize_first": "200만원",
-   "target": "제한없음",
-   "univ": false,
-   "topic": null,
-   "tags": [
-    "AI",
-    "공공"
-   ],
-   "event_start": "2026-11-02",
-   "event_end": "2026-11-04",
-   "event_text": "l 본심사 : 11.2. ~ 11.4.",
-   "weekend": false,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": false,
-   "travel": false,
-   "solo": true,
-   "team_size": null,
-   "hack_mentions": 0,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-09-14",
-   "id": "wevity-110998",
-   "source": "위비티",
-   "kind": "loose",
-   "title": "공공 웹사이트 불법광고 탐지 도구 개발 공모전",
-   "host": "행정안전부",
-   "deadline": "2026-10-23",
-   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=110998",
-   "merged_ids": [
-    "wevity-110998"
    ],
    "first_seen": "2026-10-22T11:44:54+09:00"
   },
@@ -986,11 +908,49 @@
    "kind": "core",
    "title": "2026 충북글로벌게임센터 AI 게임 개발 공모전",
    "host": "청주시문화산업진흥재단",
-   "deadline": "2026-10-30",
+   "deadline": "2026-10-31",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111767",
    "merged_ids": [
     "wevity-111767",
     "linkareer-358051"
+   ],
+   "first_seen": "2026-10-22T11:44:54+09:00"
+  },
+  {
+   "prize": null,
+   "prize_won": null,
+   "prize_first": null,
+   "target": "대학생",
+   "univ": true,
+   "topic": "전공 융합 아이디어로 문제 해결",
+   "tags": [
+    "AI"
+   ],
+   "event_start": null,
+   "event_end": null,
+   "event_text": null,
+   "weekend": null,
+   "place": null,
+   "region": null,
+   "online": false,
+   "inperson": true,
+   "travel": false,
+   "solo": true,
+   "team_size": null,
+   "hack_mentions": 1,
+   "paid": null,
+   "fee": null,
+   "noncash": false,
+   "apply_start": "2026-09-29",
+   "id": "linkareer-353664",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "2026 CWNU SW-DNA² 챌린지 대학생 AI·SW 경진대회",
+   "host": "주식회사 휘테커",
+   "deadline": "2026-12-28",
+   "url": "https://linkareer.com/activity/353664",
+   "merged_ids": [
+    "linkareer-353664"
    ],
    "first_seen": "2026-10-22T11:44:54+09:00"
   },
@@ -1028,7 +988,7 @@
    "kind": "core",
    "title": "2026 글로컬 부산관광 트래블톤 공모전",
    "host": "부산관광공사",
-   "deadline": "2026-10-30",
+   "deadline": "2026-10-31",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111518",
    "merged_ids": [
     "wevity-111518",
@@ -1107,7 +1067,7 @@
    "kind": "core",
    "title": "나랏돈 50조 찾기 프로젝트 - 나라장터 해커톤",
    "host": "개혁신당",
-   "deadline": "2026-10-25",
+   "deadline": "2026-10-26",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111588",
    "merged_ids": [
     "wevity-111588",
