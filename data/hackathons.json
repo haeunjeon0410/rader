@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T12:12:46+09:00",
+ "updated": "2026-10-29T20:53:37+09:00",
  "errors": [],
  "items": [
   {
@@ -206,47 +206,6 @@
    "first_seen": "2026-10-27T20:11:25+09:00"
   },
   {
-   "prize": "30만원",
-   "prize_won": 300000,
-   "prize_first": null,
-   "target": "대상 제한 없음",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "데이터",
-    "헬스케어",
-    "교육"
-   ],
-   "event_start": "2026-11-10",
-   "event_end": "2026-11-10",
-   "event_text": "챌린지 킥오프: 2026. 11. 10(화) (데이콘 수강권 코드 발송)",
-   "weekend": false,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": true,
-   "team_size": null,
-   "hack_mentions": 6,
-   "paid": false,
-   "fee": "﻿ 용: 전액 0원 (무료)",
-   "noncash": false,
-   "apply_start": "2026-10-26",
-   "id": "linkareer-359582",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "[튜토리얼 100% 제공] 2027 상반기취업! 비전공자도 완성하는 AI 헬스케어 해커톤",
-   "host": "넥스트러너스",
-   "deadline": "2026-11-06",
-   "url": "https://linkareer.com/activity/359582",
-   "merged_ids": [
-    "linkareer-359582"
-   ],
-   "first_seen": "2026-10-26T20:44:09+09:00"
-  },
-  {
    "prize": "3천만원~1천만원",
    "prize_won": 30000000,
    "prize_first": "홈페이지 https://buyeostartup.kr/",
@@ -282,6 +241,47 @@
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111933",
    "merged_ids": [
     "wevity-111933"
+   ],
+   "first_seen": "2026-10-26T20:44:09+09:00"
+  },
+  {
+   "prize": "30만원",
+   "prize_won": 300000,
+   "prize_first": null,
+   "target": "대상 제한 없음",
+   "univ": false,
+   "topic": null,
+   "tags": [
+    "AI",
+    "데이터",
+    "헬스케어",
+    "교육"
+   ],
+   "event_start": "2026-11-10",
+   "event_end": "2026-11-10",
+   "event_text": "챌린지 킥오프: 2026. 11. 10(화) (데이콘 수강권 코드 발송)",
+   "weekend": false,
+   "place": null,
+   "region": null,
+   "online": false,
+   "inperson": false,
+   "travel": false,
+   "solo": true,
+   "team_size": null,
+   "hack_mentions": 6,
+   "paid": false,
+   "fee": "﻿ 용: 전액 0원 (무료)",
+   "noncash": false,
+   "apply_start": "2026-10-26",
+   "id": "linkareer-359582",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "[튜토리얼 100% 제공] 2027 상반기취업! 비전공자도 완성하는 AI 헬스케어 해커톤",
+   "host": "넥스트러너스",
+   "deadline": "2026-11-06",
+   "url": "https://linkareer.com/activity/359582",
+   "merged_ids": [
+    "linkareer-359582"
    ],
    "first_seen": "2026-10-26T20:44:09+09:00"
   },
