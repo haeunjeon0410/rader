@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T20:46:59+09:00",
+ "updated": "2026-10-31T02:22:41+09:00",
  "errors": [],
  "items": [
   {
@@ -44,45 +44,6 @@
    "first_seen": "2026-10-29T06:57:32+09:00"
   },
   {
-   "prize": "100만원",
-   "prize_won": 1000000,
-   "prize_first": null,
-   "target": "대학생, 직장인/일반인",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "창업"
-   ],
-   "event_start": null,
-   "event_end": null,
-   "event_text": null,
-   "weekend": null,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": false,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 1,
-   "paid": false,
-   "fee": "무료] “AI로 아이디어를 글로벌 비",
-   "noncash": false,
-   "apply_start": "2026-10-29",
-   "id": "linkareer-360525",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "[선착순 30명 | 참가비 무료] “AI로 아이디어를 글로벌 비즈니스로!” KU 캠퍼스타운 AI 글로벌 해커톤",
-   "host": "건국대학교",
-   "deadline": "2026-10-30",
-   "url": "https://linkareer.com/activity/360525",
-   "merged_ids": [
-    "linkareer-360525"
-   ],
-   "first_seen": "2026-10-29T06:57:32+09:00"
-  },
-  {
    "prize": "950만원",
    "prize_won": 9500000,
    "prize_first": "500만원",
@@ -115,7 +76,7 @@
    "kind": "core",
    "title": "2026 대구 대학(원) AI 드래프톤 참가팀 모집",
    "host": "대구시",
-   "deadline": "2026-11-15",
+   "deadline": "2026-11-16",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111981",
    "merged_ids": [
     "wevity-111981",
@@ -158,7 +119,7 @@
    "kind": "core",
    "title": "2026 AI 활용 전국 대학생 창업 해커톤 참가자 모집",
    "host": "교육부, 한국교육학술정보원(KERIS)",
-   "deadline": "2026-11-11",
+   "deadline": "2026-11-12",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111965",
    "merged_ids": [
     "wevity-111965",
@@ -238,7 +199,7 @@
    "kind": "core",
    "title": "2026 부여 솔버톤 - 지역문제해결 아이디어 발굴 참가자 모집",
    "host": "부여군, 부여군지역공동체활성화재단",
-   "deadline": "2026-11-11",
+   "deadline": "2026-11-12",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111933",
    "merged_ids": [
     "wevity-111933"
@@ -366,46 +327,6 @@
    "first_seen": "2026-10-23T19:37:44+09:00"
   },
   {
-   "prize": "100만원",
-   "prize_won": 1000000,
-   "prize_first": null,
-   "target": "대학생, 직장인/일반인",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "교육",
-    "창업"
-   ],
-   "event_start": "2026-11-02",
-   "event_end": "2026-11-02",
-   "event_text": "참가확정자 발표: 2026. 11. 02(월) 예정",
-   "weekend": false,
-   "place": "건국대학교 공학관 별관 X-Space (IR 대회) / 그 외 온라인",
-   "region": null,
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": true,
-   "team_size": null,
-   "hack_mentions": 4,
-   "paid": false,
-   "fee": "무료",
-   "noncash": false,
-   "apply_start": "2026-10-23",
-   "id": "linkareer-359170",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "[선착순 30명] “AI로 아이디어를 글로벌 비즈니스로!” KU 캠퍼스타운 AI 글로벌 해커톤",
-   "host": "(주)메인콘텐츠",
-   "deadline": "2026-10-30",
-   "url": "https://linkareer.com/activity/359170",
-   "merged_ids": [
-    "linkareer-359170"
-   ],
-   "first_seen": "2026-10-23T19:37:44+09:00"
-  },
-  {
    "prize": "3천만원~1천만원",
    "prize_won": 30000000,
    "prize_first": "홈페이지 https://extriver.com/event1",
@@ -439,7 +360,7 @@
    "kind": "core",
    "title": "Render × XYZ × Tin Computer 글로벌 테크 후원 해커톤",
    "host": "Extriver",
-   "deadline": "2026-11-15",
+   "deadline": "2026-11-16",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111849",
    "merged_ids": [
     "wevity-111849"
@@ -477,7 +398,7 @@
    "kind": "loose",
    "title": "쿵야 IP를 활용한 로블록스(Roblox) 게임 콘텐츠 제작 공모전",
    "host": "넷마블 MNB",
-   "deadline": "2026-11-01",
+   "deadline": "2026-11-02",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=110895",
    "merged_ids": [
     "wevity-110895"
@@ -517,7 +438,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2026-12-31",
+   "deadline": "2027-01-01",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
@@ -557,7 +478,7 @@
    "kind": "core",
    "title": "2026 조달청 AI 게임·콘텐츠 공모전",
    "host": "조달청",
-   "deadline": "2026-11-22",
+   "deadline": "2026-11-23",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111628",
    "merged_ids": [
     "wevity-111628"
@@ -635,7 +556,7 @@
    "kind": "core",
    "title": "2026 스페이스 해커톤",
    "host": "우주항공청",
-   "deadline": "2026-11-05",
+   "deadline": "2026-11-06",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111009",
    "merged_ids": [
     "wevity-111009",
@@ -752,7 +673,7 @@
    "kind": "core",
    "title": "2026 전국 대학생 SW 창업아이디어톤",
    "host": "한양대 ERICA SW중심대학사업단",
-   "deadline": "2026-11-01",
+   "deadline": "2026-11-02",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111324",
    "merged_ids": [
     "wevity-111324",
@@ -793,49 +714,11 @@
    "kind": "loose",
    "title": "현대자동차그룹 차량용 앱 개발 공모전",
    "host": "현대자동차그룹",
-   "deadline": "2026-11-15",
+   "deadline": "2026-11-16",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111802",
    "merged_ids": [
     "wevity-111802",
     "linkareer-358198"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
-  },
-  {
-   "prize": "500만원",
-   "prize_won": 5000000,
-   "prize_first": null,
-   "target": "대학생, 직장인/일반인",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "데이터"
-   ],
-   "event_start": "2026-11-02",
-   "event_end": "2026-11-02",
-   "event_text": "해커톤 : 11. 2.( 월 ) 10:00~17:00 / 인크루트홀 ( 서울특별시 중구 중림로 49 실로암빌딩 5 층 , 충정로역 5 번 출구 )",
-   "weekend": false,
-   "place": null,
-   "region": "서울",
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 4,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-21",
-   "id": "linkareer-358224",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "[접수 기간 연장] 2026 크라우드 소싱 데이터 활용 해커톤 (드론 데이터 변화탐지·3D 모델링)",
-   "host": "연세대학교 산학협력단",
-   "deadline": "2026-10-30",
-   "url": "https://linkareer.com/activity/358224",
-   "merged_ids": [
-    "linkareer-358224"
    ],
    "first_seen": "2026-10-22T11:44:54+09:00"
   },
@@ -879,89 +762,6 @@
    "first_seen": "2026-10-22T11:44:54+09:00"
   },
   {
-   "prize": "1,200만원",
-   "prize_won": 12000000,
-   "prize_first": "300만원",
-   "target": "대학생, 직장인/일반인",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "환경",
-    "보안"
-   ],
-   "event_start": "2026-11-02",
-   "event_end": "2026-11-02",
-   "event_text": "경진대회 예선: 11월 2일(월)",
-   "weekend": false,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": false,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 9,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-01",
-   "id": "linkareer-354289",
-   "source": "링커리어 · 위비티",
-   "kind": "core",
-   "title": "2026년 양자내성암호 전환 경진대회·해커톤",
-   "host": "(주)컬처메이커스",
-   "deadline": "2026-10-30",
-   "url": "https://linkareer.com/activity/354289",
-   "merged_ids": [
-    "linkareer-354289",
-    "linkareer-354272",
-    "wevity-111368"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
-  },
-  {
-   "prize": "3천만원~1천만원",
-   "prize_won": 30000000,
-   "prize_first": "800만원",
-   "target": "기타",
-   "univ": false,
-   "topic": null,
-   "tags": [
-    "AI",
-    "환경",
-    "게임"
-   ],
-   "event_start": null,
-   "event_end": null,
-   "event_text": null,
-   "weekend": null,
-   "place": null,
-   "region": "충북",
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 2,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-26",
-   "id": "wevity-111767",
-   "source": "위비티 · 링커리어",
-   "kind": "core",
-   "title": "2026 충북글로벌게임센터 AI 게임 개발 공모전",
-   "host": "청주시문화산업진흥재단",
-   "deadline": "2026-10-30",
-   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111767",
-   "merged_ids": [
-    "wevity-111767",
-    "linkareer-358051"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
-  },
-  {
    "prize": null,
    "prize_won": null,
    "prize_first": null,
@@ -996,88 +796,6 @@
    "url": "https://linkareer.com/activity/353664",
    "merged_ids": [
     "linkareer-353664"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
-  },
-  {
-   "prize": "2,000,000원",
-   "prize_won": 2000000,
-   "prize_first": "200만원",
-   "target": "기타",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "데이터",
-    "모빌리티",
-    "창업"
-   ],
-   "event_start": null,
-   "event_end": null,
-   "event_text": null,
-   "weekend": null,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": false,
-   "travel": false,
-   "solo": null,
-   "team_size": "2~4인",
-   "hack_mentions": 0,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-05",
-   "id": "wevity-111518",
-   "source": "위비티 · 링커리어",
-   "kind": "core",
-   "title": "2026 글로컬 부산관광 트래블톤 공모전",
-   "host": "부산관광공사",
-   "deadline": "2026-10-30",
-   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111518",
-   "merged_ids": [
-    "wevity-111518",
-    "linkareer-355387",
-    "linkareer-355502"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
-  },
-  {
-   "prize": null,
-   "prize_won": null,
-   "prize_first": null,
-   "target": "청소년, 대학생",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "창업"
-   ],
-   "event_start": null,
-   "event_end": null,
-   "event_text": null,
-   "weekend": null,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": false,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 2,
-   "paid": false,
-   "fee": "무료",
-   "noncash": true,
-   "apply_start": "2026-10-13",
-   "id": "linkareer-356760",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "Hello World AI 해커톤",
-   "host": "해커온",
-   "deadline": "2026-10-30",
-   "url": "https://linkareer.com/activity/356760",
-   "merged_ids": [
-    "linkareer-356760"
    ],
    "first_seen": "2026-10-22T11:44:54+09:00"
   }
