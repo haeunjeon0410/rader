@@ -1,7 +1,45 @@
 {
- "updated": "2026-10-31T20:21:02+09:00",
+ "updated": "2026-11-01T01:26:03+09:00",
  "errors": [],
  "items": [
+  {
+   "prize": "200만원",
+   "prize_won": 2000000,
+   "prize_first": null,
+   "target": "대학생, 직장인/일반인",
+   "univ": true,
+   "topic": null,
+   "tags": [
+    "데이터"
+   ],
+   "event_start": "2026-11-27",
+   "event_end": "2026-11-28",
+   "event_text": "일시: 11.27(금) ~ 28(토)",
+   "weekend": true,
+   "place": "충남지식산업센터(천안시 서북구 불당36길 63)",
+   "region": "충남",
+   "online": false,
+   "inperson": true,
+   "travel": false,
+   "solo": null,
+   "team_size": "3~4인",
+   "hack_mentions": 0,
+   "paid": true,
+   "fee": "무료 · 총상금 200만 원 · 상장 수여 · 전문가 ",
+   "noncash": false,
+   "apply_start": "2026-10-30",
+   "id": "linkareer-361137",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "2026 현장문제 AX 아이디어 해커톤 참가자 모집",
+   "host": "주식회사 어치브모먼트",
+   "deadline": "2026-11-17",
+   "url": "https://linkareer.com/activity/361137",
+   "merged_ids": [
+    "linkareer-361137"
+   ],
+   "first_seen": "2026-11-01T01:26:03+09:00"
+  },
   {
    "prize": "1,000만원",
    "prize_won": 10000000,
@@ -76,7 +114,7 @@
    "kind": "core",
    "title": "2026 대구 대학(원) AI 드래프톤 참가팀 모집",
    "host": "대구시",
-   "deadline": "2026-11-15",
+   "deadline": "2026-11-16",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111981",
    "merged_ids": [
     "wevity-111981",
@@ -119,7 +157,7 @@
    "kind": "core",
    "title": "2026 AI 활용 전국 대학생 창업 해커톤 참가자 모집",
    "host": "교육부, 한국교육학술정보원(KERIS)",
-   "deadline": "2026-11-11",
+   "deadline": "2026-11-12",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111965",
    "merged_ids": [
     "wevity-111965",
@@ -199,7 +237,7 @@
    "kind": "core",
    "title": "2026 부여 솔버톤 - 지역문제해결 아이디어 발굴 참가자 모집",
    "host": "부여군, 부여군지역공동체활성화재단",
-   "deadline": "2026-11-11",
+   "deadline": "2026-11-12",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111933",
    "merged_ids": [
     "wevity-111933"
@@ -360,7 +398,7 @@
    "kind": "core",
    "title": "Render × XYZ × Tin Computer 글로벌 테크 후원 해커톤",
    "host": "Extriver",
-   "deadline": "2026-11-15",
+   "deadline": "2026-11-16",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111849",
    "merged_ids": [
     "wevity-111849"
@@ -398,7 +436,7 @@
    "kind": "loose",
    "title": "쿵야 IP를 활용한 로블록스(Roblox) 게임 콘텐츠 제작 공모전",
    "host": "넷마블 MNB",
-   "deadline": "2026-11-01",
+   "deadline": "2026-11-02",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=110895",
    "merged_ids": [
     "wevity-110895"
@@ -438,7 +476,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2026-12-31",
+   "deadline": "2027-01-01",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
@@ -478,51 +516,12 @@
    "kind": "core",
    "title": "2026 조달청 AI 게임·콘텐츠 공모전",
    "host": "조달청",
-   "deadline": "2026-11-22",
+   "deadline": "2026-11-23",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111628",
    "merged_ids": [
     "wevity-111628"
    ],
    "first_seen": "2026-10-22T22:33:41+09:00"
-  },
-  {
-   "prize": "30만원",
-   "prize_won": 300000,
-   "prize_first": null,
-   "target": "대상 제한 없음",
-   "univ": false,
-   "topic": null,
-   "tags": [
-    "AI",
-    "금융"
-   ],
-   "event_start": "2026-11-14",
-   "event_end": "2026-11-14",
-   "event_text": "일시: 2026년 11월 14일(토) 12:30~18:30",
-   "weekend": true,
-   "place": "마루180 (서울 강남구 역삼로 180)",
-   "region": "서울",
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 4,
-   "paid": true,
-   "fee": "30,000원",
-   "noncash": false,
-   "apply_start": "2026-10-21",
-   "id": "linkareer-358739",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "젝커톤 2026 | 젝트 X 스위프 AI 해커톤",
-   "host": "젝트",
-   "deadline": "2026-10-31",
-   "url": "https://linkareer.com/activity/358739",
-   "merged_ids": [
-    "linkareer-358739"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
   },
   {
    "prize": "5천만원~3천만원",
@@ -556,7 +555,7 @@
    "kind": "core",
    "title": "2026 스페이스 해커톤",
    "host": "우주항공청",
-   "deadline": "2026-11-05",
+   "deadline": "2026-11-06",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111009",
    "merged_ids": [
     "wevity-111009",
@@ -673,7 +672,7 @@
    "kind": "core",
    "title": "2026 전국 대학생 SW 창업아이디어톤",
    "host": "한양대 ERICA SW중심대학사업단",
-   "deadline": "2026-11-01",
+   "deadline": "2026-11-02",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111324",
    "merged_ids": [
     "wevity-111324",
@@ -714,7 +713,7 @@
    "kind": "loose",
    "title": "현대자동차그룹 차량용 앱 개발 공모전",
    "host": "현대자동차그룹",
-   "deadline": "2026-11-15",
+   "deadline": "2026-11-16",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111802",
    "merged_ids": [
     "wevity-111802",
