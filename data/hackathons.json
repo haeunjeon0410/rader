@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T12:40:00+09:00",
+ "updated": "2026-11-04T22:24:51+09:00",
  "errors": [],
  "items": [
   {
@@ -245,6 +245,45 @@
    "first_seen": "2026-10-26T20:44:09+09:00"
   },
   {
+   "prize": "500만원",
+   "prize_won": 5000000,
+   "prize_first": null,
+   "target": "대상 제한 없음",
+   "univ": false,
+   "topic": null,
+   "tags": [
+    "AI",
+    "데이터"
+   ],
+   "event_start": null,
+   "event_end": null,
+   "event_text": null,
+   "weekend": null,
+   "place": null,
+   "region": null,
+   "online": false,
+   "inperson": false,
+   "travel": false,
+   "solo": null,
+   "team_size": null,
+   "hack_mentions": 4,
+   "paid": null,
+   "fee": null,
+   "noncash": false,
+   "apply_start": "2026-10-26",
+   "id": "linkareer-359517",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "[데이콘] 제주 AI·빅데이터 활용 AI Agent 개발 챌린지(~11/20)",
+   "host": "데이콘 주식회사",
+   "deadline": "2026-11-20",
+   "url": "https://linkareer.com/activity/359517",
+   "merged_ids": [
+    "linkareer-359517"
+   ],
+   "first_seen": "2026-10-26T20:44:09+09:00"
+  },
+  {
    "prize": "30만원",
    "prize_won": 300000,
    "prize_first": null,
@@ -282,45 +321,6 @@
    "url": "https://linkareer.com/activity/359582",
    "merged_ids": [
     "linkareer-359582"
-   ],
-   "first_seen": "2026-10-26T20:44:09+09:00"
-  },
-  {
-   "prize": "500만원",
-   "prize_won": 5000000,
-   "prize_first": null,
-   "target": "대상 제한 없음",
-   "univ": false,
-   "topic": null,
-   "tags": [
-    "AI",
-    "데이터"
-   ],
-   "event_start": null,
-   "event_end": null,
-   "event_text": null,
-   "weekend": null,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": false,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 4,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-26",
-   "id": "linkareer-359517",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "[데이콘] 제주 AI·빅데이터 활용 AI Agent 개발 챌린지(~11/20)",
-   "host": "데이콘 주식회사",
-   "deadline": "2026-11-20",
-   "url": "https://linkareer.com/activity/359517",
-   "merged_ids": [
-    "linkareer-359517"
    ],
    "first_seen": "2026-10-26T20:44:09+09:00"
   },
