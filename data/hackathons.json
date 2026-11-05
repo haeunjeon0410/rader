@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T12:58:18+09:00",
+ "updated": "2026-11-05T22:38:30+09:00",
  "errors": [],
  "items": [
   {
@@ -527,44 +527,6 @@
    "first_seen": "2026-10-22T11:44:54+09:00"
   },
   {
-   "prize": "300만원",
-   "prize_won": 3000000,
-   "prize_first": null,
-   "target": "대학생, 직장인/일반인",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI"
-   ],
-   "event_start": "2026-11-21",
-   "event_end": "2026-11-21",
-   "event_text": "본선 해커톤 : 2026. 11. 21.(토) 09:00~19:00 / 아키스케치 성수 (무박 당일형)",
-   "weekend": true,
-   "place": null,
-   "region": "서울",
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": false,
-   "team_size": "5~6인",
-   "hack_mentions": 6,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-16",
-   "id": "linkareer-357358",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "2026 서울 AI 디지털 배움터 청년 해커톤",
-   "host": "주식회사 구름",
-   "deadline": "2026-11-08",
-   "url": "https://linkareer.com/activity/357358",
-   "merged_ids": [
-    "linkareer-357358"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
-  },
-  {
    "prize": "100만원",
    "prize_won": 1000000,
    "prize_first": null,
@@ -679,6 +641,44 @@
    "url": "https://linkareer.com/activity/353664",
    "merged_ids": [
     "linkareer-353664"
+   ],
+   "first_seen": "2026-10-22T11:44:54+09:00"
+  },
+  {
+   "prize": "300만원",
+   "prize_won": 3000000,
+   "prize_first": null,
+   "target": "대학생, 직장인/일반인",
+   "univ": true,
+   "topic": null,
+   "tags": [
+    "AI"
+   ],
+   "event_start": "2026-11-21",
+   "event_end": "2026-11-21",
+   "event_text": "본선 해커톤 : 2026. 11. 21.(토) 09:00~19:00 / 아키스케치 성수 (무박 당일형)",
+   "weekend": true,
+   "place": null,
+   "region": "서울",
+   "online": false,
+   "inperson": true,
+   "travel": false,
+   "solo": false,
+   "team_size": "5~6인",
+   "hack_mentions": 6,
+   "paid": null,
+   "fee": null,
+   "noncash": false,
+   "apply_start": "2026-10-16",
+   "id": "linkareer-357358",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "2026 서울 AI 디지털 배움터 청년 해커톤",
+   "host": "주식회사 구름",
+   "deadline": "2026-11-08",
+   "url": "https://linkareer.com/activity/357358",
+   "merged_ids": [
+    "linkareer-357358"
    ],
    "first_seen": "2026-10-22T11:44:54+09:00"
   }
