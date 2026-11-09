@@ -1,7 +1,46 @@
 {
- "updated": "2026-11-09T12:22:56+09:00",
+ "updated": "2026-11-09T23:33:50+09:00",
  "errors": [],
  "items": [
+  {
+   "prize": null,
+   "prize_won": null,
+   "prize_first": null,
+   "target": "대상 제한 없음",
+   "univ": false,
+   "topic": null,
+   "tags": [
+    "AI",
+    "공공"
+   ],
+   "event_start": "2026-11-21",
+   "event_end": "2026-11-21",
+   "event_text": "일시: 2026년 11월 21일(토)",
+   "weekend": true,
+   "place": "서울 (시간과 장소는 확정되는 대로 안내합니다)",
+   "region": "서울",
+   "online": false,
+   "inperson": true,
+   "travel": false,
+   "solo": null,
+   "team_size": null,
+   "hack_mentions": 1,
+   "paid": false,
+   "fee": "없음",
+   "noncash": false,
+   "apply_start": "2026-11-07",
+   "id": "linkareer-362973",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "Korea Local Marketing Hackathon 2026 · 경복궁 말고, 외국인 친구에게 알려 줄 동네 지도",
+   "host": "해커온",
+   "deadline": "2026-11-16",
+   "url": "https://linkareer.com/activity/362973",
+   "merged_ids": [
+    "linkareer-362973"
+   ],
+   "first_seen": "2026-11-09T23:33:50+09:00"
+  },
   {
    "prize": "40만원",
    "prize_won": 400000,
