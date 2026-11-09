@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T06:25:59+09:00",
+ "updated": "2026-11-09T12:22:56+09:00",
  "errors": [],
  "items": [
   {
@@ -152,7 +152,7 @@
    "kind": "core",
    "title": "2026 대구 대학(원) AI 드래프톤 참가팀 모집",
    "host": "대구시",
-   "deadline": "2026-11-16",
+   "deadline": "2026-11-15",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111981",
    "merged_ids": [
     "wevity-111981",
@@ -195,7 +195,7 @@
    "kind": "core",
    "title": "2026 AI 활용 전국 대학생 창업 해커톤 참가자 모집",
    "host": "교육부, 한국교육학술정보원(KERIS)",
-   "deadline": "2026-11-12",
+   "deadline": "2026-11-11",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111965",
    "merged_ids": [
     "wevity-111965",
@@ -275,7 +275,7 @@
    "kind": "core",
    "title": "2026 부여 솔버톤 - 지역문제해결 아이디어 발굴 참가자 모집",
    "host": "부여군, 부여군지역공동체활성화재단",
-   "deadline": "2026-11-12",
+   "deadline": "2026-11-11",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111933",
    "merged_ids": [
     "wevity-111933"
@@ -355,7 +355,7 @@
    "kind": "core",
    "title": "Render × XYZ × Tin Computer 글로벌 테크 후원 해커톤",
    "host": "Extriver",
-   "deadline": "2026-11-16",
+   "deadline": "2026-11-15",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111849",
    "merged_ids": [
     "wevity-111849"
@@ -395,7 +395,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2027-01-01",
+   "deadline": "2026-12-31",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
@@ -435,7 +435,7 @@
    "kind": "core",
    "title": "2026 조달청 AI 게임·콘텐츠 공모전",
    "host": "조달청",
-   "deadline": "2026-11-23",
+   "deadline": "2026-11-22",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111628",
    "merged_ids": [
     "wevity-111628"
@@ -475,7 +475,7 @@
    "kind": "loose",
    "title": "현대자동차그룹 차량용 앱 개발 공모전",
    "host": "현대자동차그룹",
-   "deadline": "2026-11-16",
+   "deadline": "2026-11-15",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111802",
    "merged_ids": [
     "wevity-111802",
