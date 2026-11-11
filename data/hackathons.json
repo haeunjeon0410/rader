@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T12:30:27+09:00",
+ "updated": "2026-11-11T22:05:56+09:00",
  "errors": [],
  "items": [
   {
@@ -39,6 +39,46 @@
    "url": "https://linkareer.com/activity/363236",
    "merged_ids": [
     "linkareer-363236"
+   ],
+   "first_seen": "2026-11-10T22:53:27+09:00"
+  },
+  {
+   "prize": "3천만원~1천만원",
+   "prize_won": 30000000,
+   "prize_first": "500만원",
+   "target": "일반인, 대학생",
+   "univ": true,
+   "topic": null,
+   "tags": [
+    "AI",
+    "데이터",
+    "공공"
+   ],
+   "event_start": "2026-12-11",
+   "event_end": "2026-12-12",
+   "event_text": "2026. 12. 11.(금) 16:00 ~ 12. 12.(토) 16:00 (무박 2일, 24시간 연속 진행)",
+   "weekend": true,
+   "place": null,
+   "region": null,
+   "online": false,
+   "inperson": false,
+   "travel": false,
+   "solo": null,
+   "team_size": null,
+   "hack_mentions": 0,
+   "paid": null,
+   "fee": null,
+   "noncash": false,
+   "apply_start": "2026-11-10",
+   "id": "wevity-112294",
+   "source": "위비티",
+   "kind": "core",
+   "title": "2026 서울관광 프롬프톤",
+   "host": "서울관광재단",
+   "deadline": "2026-11-29",
+   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112294",
+   "merged_ids": [
+    "wevity-112294"
    ],
    "first_seen": "2026-11-10T22:53:27+09:00"
   },
