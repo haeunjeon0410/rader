@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T08:47:17+09:00",
+ "updated": "2026-11-12T13:40:06+09:00",
  "errors": [],
  "items": [
   {
@@ -39,46 +39,6 @@
    "url": "https://linkareer.com/activity/363236",
    "merged_ids": [
     "linkareer-363236"
-   ],
-   "first_seen": "2026-11-10T22:53:27+09:00"
-  },
-  {
-   "prize": "3천만원~1천만원",
-   "prize_won": 30000000,
-   "prize_first": "500만원",
-   "target": "일반인, 대학생",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "데이터",
-    "공공"
-   ],
-   "event_start": "2026-12-11",
-   "event_end": "2026-12-12",
-   "event_text": "2026. 12. 11.(금) 16:00 ~ 12. 12.(토) 16:00 (무박 2일, 24시간 연속 진행)",
-   "weekend": true,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": false,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 0,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-11-10",
-   "id": "wevity-112294",
-   "source": "위비티",
-   "kind": "core",
-   "title": "2026 서울관광 프롬프톤",
-   "host": "서울관광재단",
-   "deadline": "2026-11-30",
-   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112294",
-   "merged_ids": [
-    "wevity-112294"
    ],
    "first_seen": "2026-11-10T22:53:27+09:00"
   },
@@ -313,7 +273,7 @@
    "kind": "core",
    "title": "2026 대구 대학(원) AI 드래프톤 참가팀 모집",
    "host": "대구시",
-   "deadline": "2026-11-16",
+   "deadline": "2026-11-15",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111981",
    "merged_ids": [
     "wevity-111981",
@@ -435,7 +395,7 @@
    "kind": "core",
    "title": "Render × XYZ × Tin Computer 글로벌 테크 후원 해커톤",
    "host": "Extriver",
-   "deadline": "2026-11-16",
+   "deadline": "2026-11-15",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111849",
    "merged_ids": [
     "wevity-111849"
@@ -475,7 +435,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2027-01-01",
+   "deadline": "2026-12-31",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
@@ -515,7 +475,7 @@
    "kind": "core",
    "title": "2026 조달청 AI 게임·콘텐츠 공모전",
    "host": "조달청",
-   "deadline": "2026-11-23",
+   "deadline": "2026-11-22",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111628",
    "merged_ids": [
     "wevity-111628"
@@ -555,7 +515,7 @@
    "kind": "loose",
    "title": "현대자동차그룹 차량용 앱 개발 공모전",
    "host": "현대자동차그룹",
-   "deadline": "2026-11-16",
+   "deadline": "2026-11-15",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111802",
    "merged_ids": [
     "wevity-111802",
