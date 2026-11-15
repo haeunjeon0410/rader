@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T22:03:43+09:00",
+ "updated": "2026-11-16T07:11:59+09:00",
  "errors": [],
  "items": [
   {
@@ -196,44 +196,6 @@
    "first_seen": "2026-11-09T23:33:50+09:00"
   },
   {
-   "prize": "40만원",
-   "prize_won": 400000,
-   "prize_first": null,
-   "target": "대학생",
-   "univ": true,
-   "topic": "AI를 활용한 대학 학생회 운영 문제 해결",
-   "tags": [
-    "AI"
-   ],
-   "event_start": "2026-11-20",
-   "event_end": "2026-11-20",
-   "event_text": "본 행사: 2026. 11. 20.(금) 11:00–17:30",
-   "weekend": false,
-   "place": "CKL 기업지원센터 11층 컨퍼런스룸 (서울 중구 청계천로 40)",
-   "region": "서울",
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": true,
-   "team_size": null,
-   "hack_mentions": 1,
-   "paid": false,
-   "fee": "무료",
-   "noncash": false,
-   "apply_start": "2026-11-06",
-   "id": "linkareer-362868",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "토마토들 학생회 아이디어톤",
-   "host": "주식회사 리에이크",
-   "deadline": "2026-11-15",
-   "url": "https://linkareer.com/activity/362868",
-   "merged_ids": [
-    "linkareer-362868"
-   ],
-   "first_seen": "2026-11-07T21:00:17+09:00"
-  },
-  {
    "prize": "200만원",
    "prize_won": 2000000,
    "prize_first": null,
@@ -311,48 +273,6 @@
     "linkareer-360524"
    ],
    "first_seen": "2026-10-29T06:57:32+09:00"
-  },
-  {
-   "prize": "950만원",
-   "prize_won": 9500000,
-   "prize_first": "500만원",
-   "target": "대학생",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "공공",
-    "금융"
-   ],
-   "event_start": "2026-11-25",
-   "event_end": "2026-11-26",
-   "event_text": "일시: 2026. 11. 25.(수) 10:00 ~ 11. 26.(목) 15:15 (무박 2일)",
-   "weekend": false,
-   "place": "대구 엑스코(EXCO)",
-   "region": "대구",
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": true,
-   "team_size": "3~4인",
-   "hack_mentions": 0,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-28",
-   "id": "wevity-111981",
-   "source": "위비티 · 링커리어",
-   "kind": "core",
-   "title": "2026 대구 대학(원) AI 드래프톤 참가팀 모집",
-   "host": "대구시",
-   "deadline": "2026-11-15",
-   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111981",
-   "merged_ids": [
-    "wevity-111981",
-    "linkareer-360881",
-    "linkareer-360309"
-   ],
-   "first_seen": "2026-10-28T20:45:07+09:00"
   },
   {
    "prize": "1,000만원",
@@ -434,47 +354,6 @@
    "first_seen": "2026-10-26T20:44:09+09:00"
   },
   {
-   "prize": "3천만원~1천만원",
-   "prize_won": 30000000,
-   "prize_first": "홈페이지 https://extriver.com/event1",
-   "target": "대학생",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "교육",
-    "게임",
-    "창업"
-   ],
-   "event_start": null,
-   "event_end": null,
-   "event_text": null,
-   "weekend": null,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": false,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 3,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-21",
-   "id": "wevity-111849",
-   "source": "위비티",
-   "kind": "core",
-   "title": "Render × XYZ × Tin Computer 글로벌 테크 후원 해커톤",
-   "host": "Extriver",
-   "deadline": "2026-11-15",
-   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111849",
-   "merged_ids": [
-    "wevity-111849"
-   ],
-   "first_seen": "2026-10-22T22:33:41+09:00"
-  },
-  {
    "prize": "30만원",
    "prize_won": 300000,
    "prize_first": "30만원",
@@ -507,7 +386,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2026-12-31",
+   "deadline": "2027-01-01",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
@@ -547,53 +426,12 @@
    "kind": "core",
    "title": "2026 조달청 AI 게임·콘텐츠 공모전",
    "host": "조달청",
-   "deadline": "2026-11-22",
+   "deadline": "2026-11-23",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111628",
    "merged_ids": [
     "wevity-111628"
    ],
    "first_seen": "2026-10-22T22:33:41+09:00"
-  },
-  {
-   "prize": "5,100만원",
-   "prize_won": 51000000,
-   "prize_first": "홈페이지 https://appdevchallenge.auto-hmg.io/landing",
-   "target": "일반인, 대학생",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "데이터",
-    "모빌리티",
-    "창업"
-   ],
-   "event_start": "2026-12-03",
-   "event_end": "2026-12-04",
-   "event_text": "2차 최종 PT 심사 (오프라인 발표): 2026.12.03– 12.04",
-   "weekend": false,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": true,
-   "team_size": null,
-   "hack_mentions": 0,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-21",
-   "id": "wevity-111802",
-   "source": "위비티 · 링커리어",
-   "kind": "loose",
-   "title": "현대자동차그룹 차량용 앱 개발 공모전",
-   "host": "현대자동차그룹",
-   "deadline": "2026-11-15",
-   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111802",
-   "merged_ids": [
-    "wevity-111802",
-    "linkareer-358198"
-   ],
-   "first_seen": "2026-10-22T11:44:54+09:00"
   },
   {
    "prize": null,
