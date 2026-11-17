@@ -1,7 +1,48 @@
 {
- "updated": "2026-11-17T10:14:12+09:00",
+ "updated": "2026-11-18T00:02:29+09:00",
  "errors": [],
  "items": [
+  {
+   "prize": "100만원",
+   "prize_won": 1000000,
+   "prize_first": null,
+   "target": "대학생",
+   "univ": true,
+   "topic": null,
+   "tags": [
+    "AI",
+    "데이터",
+    "모빌리티",
+    "교육"
+   ],
+   "event_start": "2027-02-27",
+   "event_end": "2027-02-27",
+   "event_text": "오프라인 최종 발표·시상식: 2027.02.27(토)",
+   "weekend": true,
+   "place": null,
+   "region": null,
+   "online": false,
+   "inperson": true,
+   "travel": false,
+   "solo": null,
+   "team_size": null,
+   "hack_mentions": 1,
+   "paid": null,
+   "fee": null,
+   "noncash": false,
+   "apply_start": "2026-11-16",
+   "id": "linkareer-365130",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "2027 제 2회 Superb AI X BDAI Vision AI 해커톤",
+   "host": "비디에이아이(BDAI)",
+   "deadline": "2027-01-10",
+   "url": "https://linkareer.com/activity/365130",
+   "merged_ids": [
+    "linkareer-365130"
+   ],
+   "first_seen": "2026-11-18T00:02:29+09:00"
+  },
   {
    "prize": null,
    "prize_won": null,
@@ -37,42 +78,6 @@
     "linkareer-364831"
    ],
    "first_seen": "2026-11-16T23:09:10+09:00"
-  },
-  {
-   "prize": "640만원",
-   "prize_won": 6400000,
-   "prize_first": null,
-   "target": "대학생, 직장인/일반인",
-   "univ": true,
-   "topic": "당일 공개",
-   "tags": [],
-   "event_start": null,
-   "event_end": null,
-   "event_text": null,
-   "weekend": null,
-   "place": "해운대센트럴호텔",
-   "region": null,
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": null,
-   "team_size": "4~5인",
-   "hack_mentions": 2,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-11-14",
-   "id": "linkareer-364458",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "2026 동남권 이노베이션 해커톤 ICT INNOHACK",
-   "host": "주식회사 패스파인더",
-   "deadline": "2026-11-17",
-   "url": "https://linkareer.com/activity/364458",
-   "merged_ids": [
-    "linkareer-364458"
-   ],
-   "first_seen": "2026-11-14T21:38:01+09:00"
   },
   {
    "prize": "40만원",
@@ -191,44 +196,6 @@
     "wevity-112294"
    ],
    "first_seen": "2026-11-10T22:53:27+09:00"
-  },
-  {
-   "prize": "200만원",
-   "prize_won": 2000000,
-   "prize_first": null,
-   "target": "대학생, 직장인/일반인",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "데이터"
-   ],
-   "event_start": "2026-11-27",
-   "event_end": "2026-11-28",
-   "event_text": "일시: 11.27(금) ~ 28(토)",
-   "weekend": true,
-   "place": "충남지식산업센터(천안시 서북구 불당36길 63)",
-   "region": "충남",
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": null,
-   "team_size": "3~4인",
-   "hack_mentions": 0,
-   "paid": true,
-   "fee": "무료 · 총상금 200만 원 · 상장 수여 · 전문가 ",
-   "noncash": false,
-   "apply_start": "2026-10-30",
-   "id": "linkareer-361137",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "2026 현장문제 AX 업무혁신 아이디어 해커톤 참가자 모집",
-   "host": "주식회사 어치브모먼트",
-   "deadline": "2026-11-17",
-   "url": "https://linkareer.com/activity/361137",
-   "merged_ids": [
-    "linkareer-361137"
-   ],
-   "first_seen": "2026-11-01T01:26:03+09:00"
   },
   {
    "prize": "1,000만원",
