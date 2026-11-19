@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T08:39:38+09:00",
+ "updated": "2026-11-19T13:49:17+09:00",
  "errors": [],
  "items": [
   {
@@ -34,7 +34,7 @@
    "kind": "core",
    "title": "2027 지역 창업 솔버톤 - AI가 깨우는 지역의 불씨",
    "host": "서울대학교 대학연대 지역인재양성사업단(IITD)",
-   "deadline": "2026-11-29",
+   "deadline": "2026-11-28",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112402",
    "merged_ids": [
     "wevity-112402"
@@ -389,7 +389,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2027-01-01",
+   "deadline": "2026-12-31",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
@@ -429,7 +429,7 @@
    "kind": "core",
    "title": "2026 조달청 AI 게임·콘텐츠 공모전",
    "host": "조달청",
-   "deadline": "2026-11-23",
+   "deadline": "2026-11-22",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111628",
    "merged_ids": [
     "wevity-111628"
