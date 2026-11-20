@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T23:30:24+09:00",
+ "updated": "2026-11-21T08:27:19+09:00",
  "errors": [],
  "items": [
   {
@@ -33,7 +33,7 @@
    "kind": "core",
    "title": "2026 포항 MICE 창업 해커톤",
    "host": "포항시",
-   "deadline": "2026-11-30",
+   "deadline": "2026-12-01",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112475",
    "merged_ids": [
     "wevity-112475",
@@ -75,7 +75,7 @@
    "kind": "core",
    "title": "일상 속 아이디어를 AI로 웹·앱 서비스로! INNO-CODER AI HACKATHON 참가팀 모집",
    "host": "(재)운당나눔재단, (재)울산창조경제혁신센터",
-   "deadline": "2026-11-29",
+   "deadline": "2026-11-30",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112474",
    "merged_ids": [
     "wevity-112474",
@@ -156,7 +156,7 @@
    "kind": "core",
    "title": "2027 지역 창업 솔버톤 - AI가 깨우는 지역의 불씨",
    "host": "서울대학교 대학연대 지역인재양성사업단(IITD)",
-   "deadline": "2026-11-28",
+   "deadline": "2026-11-29",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112402",
    "merged_ids": [
     "wevity-112402"
@@ -440,45 +440,6 @@
    "first_seen": "2026-10-27T20:11:25+09:00"
   },
   {
-   "prize": "500만원",
-   "prize_won": 5000000,
-   "prize_first": null,
-   "target": "대상 제한 없음",
-   "univ": false,
-   "topic": null,
-   "tags": [
-    "AI",
-    "데이터"
-   ],
-   "event_start": null,
-   "event_end": null,
-   "event_text": null,
-   "weekend": null,
-   "place": null,
-   "region": null,
-   "online": false,
-   "inperson": false,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 4,
-   "paid": null,
-   "fee": null,
-   "noncash": false,
-   "apply_start": "2026-10-26",
-   "id": "linkareer-359517",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "[데이콘] 제주 AI·빅데이터 활용 AI Agent 개발 챌린지(~11/20)",
-   "host": "데이콘 주식회사",
-   "deadline": "2026-11-20",
-   "url": "https://linkareer.com/activity/359517",
-   "merged_ids": [
-    "linkareer-359517"
-   ],
-   "first_seen": "2026-10-26T20:44:09+09:00"
-  },
-  {
    "prize": "30만원",
    "prize_won": 300000,
    "prize_first": "30만원",
@@ -511,7 +472,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2026-12-31",
+   "deadline": "2027-01-01",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
@@ -551,7 +512,7 @@
    "kind": "core",
    "title": "2026 조달청 AI 게임·콘텐츠 공모전",
    "host": "조달청",
-   "deadline": "2026-11-22",
+   "deadline": "2026-11-23",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111628",
    "merged_ids": [
     "wevity-111628"
