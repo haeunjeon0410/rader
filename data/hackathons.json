@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T01:41:50+09:00",
+ "updated": "2026-11-24T12:33:36+09:00",
  "errors": [],
  "items": [
   {
@@ -33,7 +33,7 @@
    "kind": "core",
    "title": "Build with Qwen: AutoRAG Hackathon 2026",
    "host": "알리바바 클라우드, Markr, 브레인크루",
-   "deadline": "2026-11-30",
+   "deadline": "2026-11-29",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112518",
    "merged_ids": [
     "wevity-112518",
@@ -194,7 +194,7 @@
    "kind": "core",
    "title": "제1회 서울국제AI광고영상제 (SIADAFF)",
    "host": "(주)케이미디어진흥원",
-   "deadline": "2027-01-08",
+   "deadline": "2027-01-07",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112508",
    "merged_ids": [
     "wevity-112508"
@@ -232,7 +232,7 @@
    "kind": "core",
    "title": "2026 포항 MICE 창업 해커톤",
    "host": "포항시",
-   "deadline": "2026-12-01",
+   "deadline": "2026-11-30",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112475",
    "merged_ids": [
     "wevity-112475",
@@ -274,7 +274,7 @@
    "kind": "core",
    "title": "일상 속 아이디어를 AI로 웹·앱 서비스로! INNO-CODER AI HACKATHON 참가팀 모집",
    "host": "(재)운당나눔재단, (재)울산창조경제혁신센터",
-   "deadline": "2026-11-30",
+   "deadline": "2026-11-29",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112474",
    "merged_ids": [
     "wevity-112474",
@@ -355,7 +355,7 @@
    "kind": "core",
    "title": "2027 지역 창업 솔버톤 - AI가 깨우는 지역의 불씨",
    "host": "서울대학교 대학연대 지역인재양성사업단(IITD)",
-   "deadline": "2026-11-29",
+   "deadline": "2026-11-28",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112402",
    "merged_ids": [
     "wevity-112402"
@@ -594,7 +594,7 @@
    "kind": "core",
    "title": "2026 AI 플레이 콘텐츠 제작 공모전",
    "host": "중앙대학교",
-   "deadline": "2027-01-01",
+   "deadline": "2026-12-31",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=111800",
    "merged_ids": [
     "wevity-111800",
