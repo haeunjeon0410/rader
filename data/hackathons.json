@@ -1,7 +1,46 @@
 {
- "updated": "2026-11-26T10:15:16+09:00",
+ "updated": "2026-11-27T00:55:25+09:00",
  "errors": [],
  "items": [
+  {
+   "prize": "30만원",
+   "prize_won": 300000,
+   "prize_first": null,
+   "target": "대상 제한 없음",
+   "univ": true,
+   "topic": null,
+   "tags": [
+    "AI",
+    "창업"
+   ],
+   "event_start": "2026-11-28",
+   "event_end": "2026-11-29",
+   "event_text": "행사 기간: 2026년 11월 28일(토) ~ 11월 29일(일)",
+   "weekend": true,
+   "place": "부산 스페이스 유주(금련산역 도보 5분)",
+   "region": "부산",
+   "online": false,
+   "inperson": true,
+   "travel": false,
+   "solo": null,
+   "team_size": null,
+   "hack_mentions": 5,
+   "paid": false,
+   "fee": "전액 무료",
+   "noncash": false,
+   "apply_start": "2026-11-25",
+   "id": "linkareer-367022",
+   "source": "링커리어",
+   "kind": "core",
+   "title": "2026 영원톤(YEONGWONTHON) 해커톤 참가자 모집",
+   "host": "Reporch",
+   "deadline": "2026-11-27",
+   "url": "https://linkareer.com/activity/367022",
+   "merged_ids": [
+    "linkareer-367022"
+   ],
+   "first_seen": "2026-11-27T00:55:25+09:00"
+  },
   {
    "prize": "1,500만원",
    "prize_won": 15000000,
@@ -203,10 +242,10 @@
    "first_seen": "2026-11-23T13:26:51+09:00"
   },
   {
-   "prize": "300만 원",
+   "prize": "300만원",
    "prize_won": 3000000,
    "prize_first": "홈페이지 https://allmice.org",
-   "target": "제한없음",
+   "target": "대상 제한 없음",
    "univ": false,
    "topic": null,
    "tags": [
@@ -228,16 +267,16 @@
    "fee": "무료",
    "noncash": false,
    "apply_start": "2026-11-20",
-   "id": "wevity-112475",
-   "source": "위비티 · 링커리어",
+   "id": "linkareer-365981",
+   "source": "링커리어 · 위비티",
    "kind": "core",
    "title": "2026 포항 MICE 창업 해커톤",
    "host": "포항시",
-   "deadline": "2026-12-01",
-   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&ix=112475",
+   "deadline": "2026-11-30",
+   "url": "https://linkareer.com/activity/365981",
    "merged_ids": [
-    "wevity-112475",
-    "linkareer-365981"
+    "linkareer-365981",
+    "wevity-112475"
    ],
    "first_seen": "2026-11-20T14:40:00+09:00"
   },
