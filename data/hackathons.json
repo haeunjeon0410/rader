@@ -1,46 +1,7 @@
 {
- "updated": "2026-11-27T10:13:34+09:00",
+ "updated": "2026-11-28T00:44:15+09:00",
  "errors": [],
  "items": [
-  {
-   "prize": "30만원",
-   "prize_won": 300000,
-   "prize_first": null,
-   "target": "대상 제한 없음",
-   "univ": true,
-   "topic": null,
-   "tags": [
-    "AI",
-    "창업"
-   ],
-   "event_start": "2026-11-28",
-   "event_end": "2026-11-29",
-   "event_text": "행사 기간: 2026년 11월 28일(토) ~ 11월 29일(일)",
-   "weekend": true,
-   "place": "부산 스페이스 유주(금련산역 도보 5분)",
-   "region": "부산",
-   "online": false,
-   "inperson": true,
-   "travel": false,
-   "solo": null,
-   "team_size": null,
-   "hack_mentions": 5,
-   "paid": false,
-   "fee": "전액 무료",
-   "noncash": false,
-   "apply_start": "2026-11-25",
-   "id": "linkareer-367022",
-   "source": "링커리어",
-   "kind": "core",
-   "title": "2026 영원톤(YEONGWONTHON) 해커톤 참가자 모집",
-   "host": "Reporch",
-   "deadline": "2026-11-27",
-   "url": "https://linkareer.com/activity/367022",
-   "merged_ids": [
-    "linkareer-367022"
-   ],
-   "first_seen": "2026-11-27T00:55:25+09:00"
-  },
   {
    "prize": "1,500만원",
    "prize_won": 15000000,
